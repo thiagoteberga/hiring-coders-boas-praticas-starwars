@@ -1,0 +1,78 @@
+.section{
+    height: 100vh;
+    width: 100%;
+
+    & h1{
+        color: #ffc500;
+    }
+}
+
+.background--one{
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    //& .block-section--one{ //Usar o & apenas quando nao for uma classe customizada
+    .block-section--one{
+        width: 100%;
+        display: block;
+        text-align: center;
+
+        & h1{
+            font-size: 400;
+            font-weight: 22px;
+            margin-bottom: 32px;
+        }
+
+        & img{
+            cursor: pointer;
+            width: 300px;
+            height: auto;
+            transition: 0.3s;
+
+            &:hover{
+                transform: scale(1.2)
+            }
+        }
+    }
+}
+
+.background--two{
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+
+    .block-section--two{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: calc(10px - 60px);
+        height: 100%;
+
+        //& .text-block--two{
+        //    width: 40%;
+        //    height: 100%;
+        //    & img{
+        //        margin: 90px 0px 0px 90px;
+        //    }
+        //}
+
+        & img {
+            max-width: 300px;
+            height: auto;
+        }
+
+        & p {
+            margin-left: 70px;
+            height: 100%;
+            text-align: right;
+        }
+
+    }
+}
